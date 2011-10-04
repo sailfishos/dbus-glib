@@ -1,0 +1,10 @@
+<package project="Mer:Trunk:Base" name="dbus-glib">
+  <title>GLib bindings for D-Bus</title>
+  <description>D-Bus add-on library to integrate the standard D-Bus library with
+the GLib thread abstraction and main loop.
+
+
+
+</description>
+  <url>http://www.freedesktop.org/software/dbus/</url>
+</package>

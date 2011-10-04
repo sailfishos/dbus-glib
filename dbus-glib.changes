@@ -1,0 +1,46 @@
+* Mon May 02 2011 Chris Ferron <chris.e.ferron@linux.intel.com> - 0.92
+- FEA#16109 - [FEA] Implement SystemD as MeeGo init provide
+- As systemd is now the MeeGo init provider there is no need for 
+  chkconfig to be used. 
+
+
+* Wed Feb 09 2011 Patrick McCarty <patrick.mccarty@linux.intel.com> - 0.92
+- (BMC#13229) Update to version 0.92
+
+* Thu Nov 11 2010 Senko Rasic <senko.rasic@collabora.co.uk> - 0.88
+- Update to 0.88
+  + Fix possible crash when D-Bus method call is cancelled (BMC#9550).
+- Remove the three patches (they're included in upstream)
+
+* Mon Aug 30 2010 Huaxu Wan <huaxu.wan@linux.intel.com> - 0.86
+- Add two upstream patches:
+      Fix-lookup-of-regular-properties-when-shadow-propert.patch
+      Respect-property-access-flags-for-writing.patch
+- Fix BMC#5913
+  
+* Thu Aug 26 2010 Yi Yang <yi.y.yang@intel.com> - 0.86
+- Add remove-a-wrong-assert.patch to fix BMC#5408
+
+* Thu Mar 25 2010 Yi Yang <yi.y.yang@intel.com> - 0.86
+- Update to 0.86
+
+* Tue Feb 02 2010 Vivian Zhang <vivian.zhang@intel.com> - 0.84
+- Update to 0.84
+- Drop source1 and use internal introspect.xml
+
+* Tue Jan 12 2010 Anas Nashif <anas.nashif@intel.com> - 0.82
+- Save 300K removing ChangeLog file
+
+* Sun Sep 06 2009 Peter Zhu <peter.j.zhu@intel.com> 0.82
+- Upgrade to version 0.82
+
+* Sat Feb 14 2009 Vivian Zhang <vivian.zhang@intel.com> 0.80
+- Upgrade to version 0.80
+- Adjust to new bash completion dir
+
+* Tue Dec 23 2008 Arjan van de Ven <arjan@linux.intel.com> 0.78
+- Upgrade to version 0.78
+
+* Wed Dec 17 2008 Arjan van de Ven <arjan@linux.intel.com> 0.76
+- Create standardized spec file
+

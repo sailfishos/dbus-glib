@@ -1,0 +1,34 @@
+Name: dbus-glib
+Summary: GLib bindings for D-Bus
+Version: 0.92
+Release: 1
+Group: System/Libraries
+License: AFL/GPL
+URL: http://www.freedesktop.org/software/dbus/
+Description: |
+    D-Bus add-on library to integrate the standard D-Bus library with
+    the GLib thread abstraction and main loop.
+
+Sources:
+    - http://dbus.freedesktop.org/releases/dbus-glib/%{name}-%{version}.tar.gz
+
+PkgBR:
+    - libtool
+    - expat-devel
+    - gettext
+    - autoconf
+PkgConfigBR:
+    - dbus-1
+    - libxml-2.0
+    - glib-2.0
+Configure: configure
+ConfigOptions:
+    - --disable-tests
+    - --enable-verbose-mode=yes
+    - --enable-asserts=yes
+    - --disable-gtk-doc
+SubPackages:
+    - Name: devel
+      Summary: Libraries and headers for the D-Bus GLib bindings
+      Group: Development/Libraries
+      Description: Headers and static libraries for the D-Bus GLib bindings
