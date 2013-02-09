@@ -1,8 +1,10 @@
+* Sat Feb 09 2013 Marko Saukko <marko.saukko@jollamobile.com> - 0.100
+- Update to version 0.100
+
 * Mon May 02 2011 Chris Ferron <chris.e.ferron@linux.intel.com> - 0.92
 - FEA#16109 - [FEA] Implement SystemD as MeeGo init provide
 - As systemd is now the MeeGo init provider there is no need for 
   chkconfig to be used. 
-
 
 * Wed Feb 09 2011 Patrick McCarty <patrick.mccarty@linux.intel.com> - 0.92
 - (BMC#13229) Update to version 0.92

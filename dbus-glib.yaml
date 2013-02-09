@@ -1,6 +1,6 @@
 Name: dbus-glib
 Summary: GLib bindings for D-Bus
-Version: 0.92
+Version: 0.100
 Release: 1
 Group: System/Libraries
 License: AFL/GPL
