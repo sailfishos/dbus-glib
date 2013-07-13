@@ -9,7 +9,7 @@ Name:       dbus-glib
 # << macros
 
 Summary:    GLib bindings for D-Bus
-Version:    0.100
+Version:    0.100.2
 Release:    1
 Group:      System/Libraries
 License:    AFL/GPL
