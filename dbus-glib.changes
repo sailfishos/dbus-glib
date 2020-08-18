@@ -1,3 +1,6 @@
+* Mon Nov 16 2020 Björn Bidar <bjorn.bidar@jolla.com> - 0.100.2-3
+- [dbus-glib] Fix rpm license tag. JB#50383
+
 * Wed Jan 16 2018 Tomi Leppänen <tomi.leppanen@jolla.com> - 0.100.2-2
 - [packaging] Add dbus-glib-doc subpackage. Contributes to JB#24119
 
