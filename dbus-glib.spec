@@ -1,9 +1,9 @@
 Name:       dbus-glib
 Summary:    GLib bindings for D-Bus
 Version:    0.100.2
-Release:    2
+Release:    3
 Group:      System/Libraries
-License:    AFL/GPL
+License:    AFL or GPLv2+
 URL:        http://www.freedesktop.org/software/dbus/
 Source0:    http://dbus.freedesktop.org/releases/dbus-glib/%{name}-%{version}.tar.gz
 Requires(post): /sbin/ldconfig
