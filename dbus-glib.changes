@@ -1,3 +1,6 @@
+* Wed May 28 2025 Matti Lehtimäki <matti.lehtimaki@jolla.com> - 0.114
+- Update to version 0.114. JB#63045
+
 * Mon Nov 16 2020 Björn Bidar <bjorn.bidar@jolla.com> - 0.100.2-3
 - [dbus-glib] Fix rpm license tag. JB#50383
 
