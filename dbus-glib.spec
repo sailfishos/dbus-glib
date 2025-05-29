@@ -1,8 +1,7 @@
 Name:       dbus-glib
 Summary:    GLib bindings for D-Bus
-Version:    0.100.2
-Release:    3
-Group:      System/Libraries
+Version:    0.114
+Release:    1
 License:    AFL or GPLv2+
 URL:        http://www.freedesktop.org/software/dbus/
 Source0:    http://dbus.freedesktop.org/releases/dbus-glib/%{name}-%{version}.tar.gz
@@ -22,7 +21,6 @@ the GLib thread abstraction and main loop.
 
 %package devel
 Summary:    Libraries and headers for the D-Bus GLib bindings
-Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
 
 %description devel
@@ -30,14 +28,13 @@ Headers and static libraries for the D-Bus GLib bindings
 
 %package doc
 Summary:   Documentation for %{name}
-Group:     Documentation
 Requires:  %{name} = %{version}-%{release}
 
 %description doc
 Man page for %{name}.
 
 %prep
-%setup -q -n %{name}-%{version}
+%autosetup -n %{name}-%{version}
 
 %build
 
@@ -47,24 +44,16 @@ Man page for %{name}.
     --enable-asserts=yes \
     --disable-gtk-doc
 
-make %{?_smp_mflags}
+%make_build
 
 %install
-rm -rf %{buildroot}
 %make_install
-
-gzip ChangeLog
-
-mkdir -p %{buildroot}%{_docdir}/%{name}-%{version}
-install -m0644 -t %{buildroot}%{_docdir}/%{name}-%{version} \
-	ChangeLog.gz NEWS
 
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root,-)
 %license COPYING
 %{_libdir}/*glib*.so.*
 %{_bindir}/dbus-binding-tool
@@ -72,13 +61,10 @@ install -m0644 -t %{buildroot}%{_docdir}/%{name}-%{version} \
 /usr/libexec/dbus-bash-completion-helper
 
 %files devel
-%defattr(-,root,root,-)
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/dbus-glib-1.pc
 %{_includedir}/dbus-1.0/dbus/*
 
 %files doc
-%defattr(-,root,root,-)
 %{_mandir}/man1/*
-%{_docdir}/%{name}-%{version}
 %doc %{_datadir}/gtk-doc/html/dbus-glib
